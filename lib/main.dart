@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'home_screen.dart';
 import 'create_screen.dart';
 import 'edit_screen.dart';
+import 'splash_screen.dart'; // Import the SplashScreen
 
 void main() {
   runApp(const MyApp());
@@ -18,9 +19,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      // Set the HomeScreen as the first screen
-      initialRoute: '/',
+      initialRoute: '/splash', // Set SplashScreen as the initial screen
       routes: {
+        '/splash': (context) => const SplashScreen(), // Add SplashScreen route
         '/': (context) => const HomeScreen(),
         '/create': (context) => const CreateScreen(),
         '/edit': (context) => const EditScreen(),
