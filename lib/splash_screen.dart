@@ -39,7 +39,7 @@ class SplashScreen extends StatelessWidget {
               const SizedBox(height: 20),
               // Stylish app title with bold font and shadow effect
               Text(
-                'To-Do List App',
+                'Tyson TDL',
                 style: TextStyle(
                   fontSize: 32.0,
                   color: Colors.white,
